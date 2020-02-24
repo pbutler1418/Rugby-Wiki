@@ -1,9 +1,9 @@
 import React from "react"
 
-function PlayerInfo() {
+function PlayerInfoPage() {
   return (
     <h1>Player Info</h1>
   )
 }
 
-export default PlayerInfo
+export default PlayerInfoPage

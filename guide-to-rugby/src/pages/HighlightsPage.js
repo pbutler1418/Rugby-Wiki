@@ -1,9 +1,9 @@
 import React from "react"
 
-function Highlights() {
+function HighlightsPage() {
   return (
     <h1>Highlights</h1>
   )
 }
 
-export default Highlights
+export default HighlightsPage

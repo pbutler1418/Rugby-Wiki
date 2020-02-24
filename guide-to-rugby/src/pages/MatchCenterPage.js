@@ -1,9 +1,9 @@
 import React from "react"
 
-function MatchCenter() {
+function MatchCenterPage() {
   return (
     <h1>Match Info</h1>
   )
 }
 
-export default MatchCenter
+export default MatchCenterPage

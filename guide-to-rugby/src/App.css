@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+nav{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 200%;
+  color: black;
+  text-decoration: none;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +43,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+img{
+  height: 50%;
+  width: 50%;
+  border-radius: 10%;
+  border: 5px solid black;
+}
+
+body{
+  background-image: url(https://2c6disor5j62kph211fg7v42-wpengine.netdna-ssl.com/wp-content/uploads/2015/03/Hong-Kong-Sevens-Stadium-1024x768.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+p{
+  color:white;
+}
+.text{
+  background: 50% black;
+  opacity: 70%;
 }

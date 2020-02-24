@@ -1,4 +1,5 @@
 const API_KEY = "4013017"
-export const BASE_URL = `https://www.thesportsdb.com/api/v1/json/${API_KEY}/eventshighlights.php?l=Rugby_Union_Premiership`
+export const TEAM_URL = `https://www.thesportsdb.com/api/v1/json/${API_KEY}/search_all_teams.php?s=Rugby&c=England`
+// export const LEAGUE_INFO = `https://www.thesportsdb.com/api/v1/json/${API_KEY}/search_all_leagues.php?c=England&s=Rugby`
 
-export default BASE_URL
+export default TEAM_URL

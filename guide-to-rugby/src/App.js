@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import TeamInfo from "./pages/TeamInfo"
+import TeamInfoPage from "./pages/TeamInfoPage"
 import Home from "./pages/Home"
-import MatchCenter from "./pages/MatchCenter"
-import LeagueInfo from "./pages/LeagueInfo"
-import PlayerInfo from "./pages/PlayerInfo"
-import Highlights from "./pages/Highlights"
+import MatchCenterPage from "./pages/MatchCenterPage"
+import LeagueInfoPage from "./pages/LeagueInfoPage"
+import PlayerInfoPage from "./pages/PlayerInfoPage"
+import HighlightsPage from "./pages/HighlightsPage"
 
 import {
   Route,
@@ -16,7 +16,7 @@ import {
 function App() {
   return (
     <div className="App">
-        <div classname="links">
+        <div className="links">
           <nav>
           <NavLink
             exact
@@ -65,11 +65,11 @@ function App() {
       <main>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/teamInfo" component={TeamInfo} />
-          <Route path="/leagueInfo" component={LeagueInfo} />
-          <Route path="/matchCenter" component={MatchCenter} />
-          <Route path="/playerInfo" component={PlayerInfo} />
-          <Route path="/highlights"component={Highlights} />
+          <Route path="/teamInfo" component={TeamInfoPage} />
+          <Route path="/leagueInfo" component={LeagueInfoPage} />
+          <Route path="/matchCenter" component={MatchCenterPage} />
+          <Route path="/playerInfo" component={PlayerInfoPage} />
+          <Route path="/highlights"component={HighlightsPage} />
         </Switch>
       </main>
         
