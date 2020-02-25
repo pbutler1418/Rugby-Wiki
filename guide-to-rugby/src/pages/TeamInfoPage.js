@@ -1,7 +1,8 @@
 import React, {Component} from "react"
 import axios from "axios"
 const API_KEY = "4013017"
-export const TEAM_URL = `https://www.thesportsdb.com/api/v1/json/${API_KEY}/search_all_teams.php?s=Rugby&c=Scotland`
+const COUNTRY = "France"
+export const TEAM_URL = `https://www.thesportsdb.com/api/v1/json/${API_KEY}/search_all_teams.php?s=Rugby&c=${COUNTRY}`
 
 class TeamInfoPage extends Component {
   constructor() {

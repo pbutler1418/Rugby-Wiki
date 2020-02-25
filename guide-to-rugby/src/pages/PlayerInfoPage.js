@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import axios from "axios"
 const API_KEY = "4013017"
-export const TEAM_URL = `https://www.thesportsdb.com/api/v1/json/${API_KEY}/searchplayers.php?t=Leicester_Tigers`
+export const TEAM_URL = `https://www.thesportsdb.com/api/v1/json/${API_KEY}/searchplayers.php?t=London`
 
 class PlayerInfoPage extends Component {
   constructor() {

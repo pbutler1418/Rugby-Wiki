@@ -30,12 +30,14 @@ class HighlightsPage extends Component {
 
 
     let reels = this.state.highlights.length !== 0 && this.state.highlights.tvhighlights.map((highlight, index) => {
+      console.log(highlight.strVideo.substring(highlight.strVideo.indexOf("=")+1))
+      const youtubeId = highlight.strVideo.substring(highlight.strVideo.indexOf("=")+1)
+
       return (
         <div key={index}>
           <h2>{highlight.strEvent}</h2>
-          <img src={highlight.strThumb} />
-          <a href={highlight.strVideo}>{highlight.strEvent}</a>
           
+          <iframe width="560" height="315" src={`https://www.youtube.com/embed/${youtubeId}`}frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
       )
     })
