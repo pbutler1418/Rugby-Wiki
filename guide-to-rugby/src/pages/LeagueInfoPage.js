@@ -1,7 +1,8 @@
 import React, {Component} from "react"
 import axios from "axios"
 import LeagueInfo from "../components/LeagueInfo"
-import LEAGUE_INFO from "../components/constants"
+const API_KEY = "4013017"
+export const LEAGUE_INFO = `https://www.thesportsdb.com/api/v1/json/${API_KEY}/search_all_leagues.php?c=England&s=Rugby`
 
 class LeagueInfoPage extends Component {
   constructor() {
@@ -34,7 +35,7 @@ class LeagueInfoPage extends Component {
       return <div key={index}>
         <h2>{comp.strLeague}</h2>
         <h2>Year Founded: {comp.intFormedYear}</h2>
-        <img src={comp.strFanart1} />
+        <img src={comp.strFanart1} alt="rugby"/>
         <h2>Description</h2>
         <p className = "text">{comp.strDescriptionEN}</p>
 

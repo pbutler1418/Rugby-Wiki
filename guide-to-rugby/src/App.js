@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import TeamInfoPage from "./pages/TeamInfoPage"
 import Home from "./pages/Home"
-import MatchCenterPage from "./pages/MatchCenterPage"
 import LeagueInfoPage from "./pages/LeagueInfoPage"
 import PlayerInfoPage from "./pages/PlayerInfoPage"
 import HighlightsPage from "./pages/HighlightsPage"
@@ -41,13 +40,6 @@ function App() {
           </NavLink> 
           <NavLink
             exact
-            to={'/matchCenter'}
-            activeClassName={"active"}
-          >
-            Match Center
-          </NavLink> 
-          <NavLink
-            exact
             to={'/playerInfo'}
             activeClassName={"active"}
           >
@@ -67,7 +59,6 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/teamInfo" component={TeamInfoPage} />
           <Route path="/leagueInfo" component={LeagueInfoPage} />
-          <Route path="/matchCenter" component={MatchCenterPage} />
           <Route path="/playerInfo" component={PlayerInfoPage} />
           <Route path="/highlights"component={HighlightsPage} />
         </Switch>
