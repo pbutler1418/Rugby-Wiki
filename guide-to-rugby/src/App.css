@@ -1,13 +1,39 @@
+
 .App {
   text-align: center;
 }
 
 nav{
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   font-size: 200%;
-  color: black;
+}
+
+
+a{
+  color: white;
   text-decoration: none;
+  border-radius: 10%;
+}
+
+a:hover{
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: larger;
+  font-family: 'Trade Winds', ;
+  text-shadow: 1px 1px 1px #000, 
+  3px 3px 3px black;
+}
+
+a:active{
+  background-color: black;
+}
+
+iframe{
+  border: 10px black;
 }
 
 .App-logo {
@@ -58,10 +84,10 @@ body{
   -o-background-size: cover;
   background-size: cover;
 }
-p{
+
+
+p, h1, h2{
+  background: rgba(0, 0, 0, 0.5);
   color:white;
 }
-.text{
-  background: 50% black;
-  opacity: 70%;
-}
+

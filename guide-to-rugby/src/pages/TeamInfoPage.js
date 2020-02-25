@@ -1,29 +1,45 @@
 import React, {Component} from "react"
 import axios from "axios"
+import Search from "../components/Search"
 const API_KEY = "4013017"
-const COUNTRY = "France"
-export const TEAM_URL = `https://www.thesportsdb.com/api/v1/json/${API_KEY}/search_all_teams.php?s=Rugby&c=${COUNTRY}`
+
 
 class TeamInfoPage extends Component {
   constructor() {
     super()
     
     this.state = {
-      teams: []
+      teams: [],
+      input: [],
+      searchQuery: ''
     }
   }
 
-  async componentDidMount() {
+  fetchInfo = async (searchQuery) => {
     try {
-      const response = await axios.get(TEAM_URL)
-console.log(response)
+      const response = await axios.get(`https://www.thesportsdb.com/api/v1/json/${API_KEY}/search_all_teams.php?s=Rugby&c=${searchQuery}`)
+      console.log(response)
       this.setState({
-        teams: response.data
+        teams:response.data
       })
+
     }
     catch (error) {
       console.log(error)
     }
+  }
+
+  handleChange = event => {
+  
+    this.setState({
+      [event.target.name]: event.target.value
+      
+    })
+  }
+
+  handleSubmit = event => { 
+    event.preventDefault()
+    this.fetchInfo(this.state.searchQuery)
   }
 
   render() {
@@ -40,6 +56,12 @@ console.log(response)
     return (
       <>
         <h1>Teams Info</h1>
+        <Search
+          onChange={this.handleChange}
+          onSubmit={this.handleSubmit}
+          value={this.state.searchQuery}
+          name="searchQuery"
+        />
         {clubs}
       </>
     )

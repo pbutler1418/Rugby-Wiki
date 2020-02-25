@@ -37,7 +37,7 @@ class HighlightsPage extends Component {
         <div key={index}>
           <h2>{highlight.strEvent}</h2>
           
-          <iframe width="560" height="315" src={`https://www.youtube.com/embed/${youtubeId}`}frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe width="560" height="315" src={`https://www.youtube.com/embed/${youtubeId}`} allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
       )
     })

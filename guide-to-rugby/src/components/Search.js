@@ -9,7 +9,7 @@ const Search = ({ onChange, onSubmit, name, value }) => {
         name={name}
         type="text"
       />
-      <button type="submit">Search</button>
+      <button type="submit">Search by Country</button>
     </form>
   )
 }
