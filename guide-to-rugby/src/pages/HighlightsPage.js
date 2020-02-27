@@ -21,7 +21,7 @@ class HighlightsPage extends Component {
       })
     }
     catch (error) {
-      console.log(error)
+      alert("We don't have information for that. Refresh the page and try again!")
     }
   }
 

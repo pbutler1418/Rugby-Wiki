@@ -1,6 +1,6 @@
 import React from "react"
 
-const Search = ({ onChange, onSubmit, name, value }) => {
+const SearchByTeam = ({ onChange, onSubmit, name, value }) => {
   return (
     <form onSubmit={e => onSubmit(e)}>
       <div className ="search">
@@ -10,9 +10,9 @@ const Search = ({ onChange, onSubmit, name, value }) => {
         name={name}
         type="text"
       />
-        <button type="submit">Search by Country</button>
+        <button type="submit">Search by Team</button>
         </div>
     </form>
   )
 }
-export default Search
+export default SearchByTeam

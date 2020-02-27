@@ -22,10 +22,9 @@ class TeamInfoPage extends Component {
       this.setState({
         teams:response.data
       })
-
     }
     catch (error) {
-      console.log(error)
+      alert("We don't have information for that. Refresh the page and try again!")
     }
   }
 
@@ -49,13 +48,15 @@ class TeamInfoPage extends Component {
       return (
         <div key={index}>
           <h2>{club.strTeam}</h2>
-          <img src={club.strTeamBadge}/>
+          <h3>Year Formed: {club.intFormedYear}</h3><h3>Home Stadium: {club.strStadium}</h3>
+          <img src={club.strTeamBadge} /><img src={club.strTeamJersey} />
+          <p>{club.strDescriptionEN}</p>
         </div>
       )
     }) 
     return (
       <>
-        <h1>Teams Info</h1>
+        <h1>Team Info</h1>
         <Search
           onChange={this.handleChange}
           onSubmit={this.handleSubmit}
