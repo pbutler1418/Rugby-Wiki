@@ -29,16 +29,18 @@ class LeagueInfoPage extends Component {
   }
 
   handleChange = event => {
-  
-    this.setState({
-      [event.target.name]: event.target.value
+    console.log(event.target.value)
+    this.fetchInfo(event.target.value)
+    
+    // this.setState({
+    //   [event.target.name]: event.target.value
       
-    })
+    // })
   }
 
   handleSubmit = event => { 
     event.preventDefault()
-    this.fetchInfo(this.state.searchQuery)
+    // this.fetchInfo(this.state.searchQuery)
   }
   
 
@@ -54,16 +56,23 @@ class LeagueInfoPage extends Component {
         <p className="text">{comp.strDescriptionEN}</p>
 
       </div>
+
     })
+
+    let countries = ["","Worldwide","England", "Australia", "France", "International", "Europe"]
+    let options = countries.map((country, index) => (
+      <option key={index} value={country}>
+        {country}
+      </option>
+      
+    ))
     return (
       <>
         <h1>League Info</h1>
-        <Search
-          onChange={this.handleChange}
-          onSubmit={this.handleSubmit}
-          value={this.state.searchQuery}
-          name="searchQuery"
-        />
+        <select value={this.state.value} onChange={this.handleChange}>
+          {options}
+          </select> 
+
         {comps}
       </>
     )

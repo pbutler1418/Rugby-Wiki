@@ -32,10 +32,8 @@ class PlayerInfoPage extends Component {
 
   handleChange = event => {
   
-    this.setState({
-      [event.target.name]: event.target.value
-      
-    })
+    console.log(event.target.value)
+    this.fetchInfo(event.target.value)
   }
 
   handleSubmit = event => { 
@@ -56,16 +54,22 @@ class PlayerInfoPage extends Component {
         </div>
       )
     }) 
+
+    let teams = ["","Bath Rugby","Bristol Rugby","Exeter Chiefs", "Gloucester", "Harlequins", "Leicester Tigers", "London Irish", "Northampton Saints", "Sale Sharks", "Saracens", "Wasps", "Worcester Warriors"]
+    let options = teams.map((team, index) => (
+      <option key={index} value={team}>
+        {team}
+      </option>
+      
+    ))
+
     return (
       <>
         <h1>Player Info</h1>
-        <SearchByTeam
-          onChange={this.handleChange}
-          onSubmit={this.handleSubmit}
-          value={this.state.searchQuery}
-          name="searchQuery"
-        />
-        <p>Beta only works for teams in the English Premiership (Try "Saracens" or "Exeter Chiefs")</p>
+        <select value={this.state.value} onChange={this.handleChange}>
+          {options}
+          </select> 
+        <p>Beta only works for teams in the English Premiership</p>
         {individuals}
       </>
     )

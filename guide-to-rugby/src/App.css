@@ -18,9 +18,8 @@ h1{
   font-size: 125px;
   text-shadow: 1px 1px 1px #000, 
   3px 3px 3px black;
+  font-family: 'Trade Winds', ;
 }
-
-
 
 nav{
   background: rgba(0, 0, 0, 0.5);
@@ -36,13 +35,13 @@ a{
   color: white;
   text-decoration: none;
   border-radius: 10%;
+  font-family: 'Trade Winds', ;
 }
 
 a:hover{
   text-decoration: underline;
   text-transform: uppercase;
   font-size: larger;
-  font-family: 'Trade Winds', ;
   text-shadow: 1px 1px 1px #000, 
   3px 3px 3px black;
 }
@@ -96,10 +95,21 @@ iframe{
 }
 
 img{
-  height: 50%;
-  width: 50%;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+img{
+  height: 25%;
+  width: 25%;
   border-radius: 10%;
   border: 5px solid black;
+}
+
+img:hover{
+  height:50%;
+  width:50%;
 }
 body{ 
   background: url(https://2c6disor5j62kph211fg7v42-wpengine.netdna-ssl.com/wp-content/uploads/2015/03/Hong-Kong-Sevens-Stadium-1024x768.jpg) no-repeat center center fixed; 
@@ -113,6 +123,7 @@ body{
 p, h1, h2, h3{
   background: rgba(0, 0, 0, 0.5);
   color:white;
+  font-family: 'Trade Winds', ;
 }
 
 .search{
@@ -122,6 +133,22 @@ p, h1, h2, h3{
   flex-direction: column;
   height: fit-content;
 }
+
+select{
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
 input[type=text] {
   width: 25%;
   box-sizing: border-box;
