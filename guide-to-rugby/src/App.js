@@ -64,7 +64,6 @@ function App() {
           <Route path="/highlights"component={HighlightsPage} />
         </Switch>
       </main>
-        
     </div>
   )
 }
