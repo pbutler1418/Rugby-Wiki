@@ -13,6 +13,8 @@ and teams all over the world.
     The player info page will allow the user to select a club from the English Premiership Rugby competition and recieve all the biographys available for the players on that team
   <h3>Highlights Page</h3>
     The highlight page page will conitnuously update with highlights as they are posted.
+    <h3>Search Component</h3>
+    I made a seearch component for both the team info page to allow the user to freely search for info related to whatever country they are interested in.
 
 <h2>API USED</h2>
   The api for this project is going to be The Sports DB: Sports MetaData (https://www.thesportsdb.com/).
