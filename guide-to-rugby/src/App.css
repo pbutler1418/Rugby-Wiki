@@ -39,6 +39,9 @@ a{
 }
 
 a:hover{
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
   text-decoration: underline;
   text-transform: uppercase;
   font-size: larger;
