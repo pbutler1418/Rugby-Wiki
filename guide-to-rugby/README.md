@@ -31,9 +31,9 @@ for a specific league or team for example.
   
  <h2> Wireframes </h2>
  
- <img src =".../wireframes/Screen Shot 2020-02-28 at 9.29.15 AM.png">
-<img src =".../wireframes/Screen Shot 2020-02-28 at 9.29.33 AM.png">
-<img src =".../wireframes/Screen Shot 2020-02-28 at 9.30.41 AM.png">
-<img src =".../wireframes/Screen Shot 2020-02-28 at 9.31.10 AM.png">
-<img src =".../wireframes/Screen Shot 2020-02-07 at 10.14.52 AM.png">
-<img src =".../wireframes/Screen Shot 2020-02-28 at 9.31.25 AM.png">
+ <img src ="./wireframes/Screen Shot 2020-02-28 at 9.29.15 AM.png">
+<img src ="./wireframes/Screen Shot 2020-02-28 at 9.29.33 AM.png">
+<img src ="./wireframes/Screen Shot 2020-02-28 at 9.30.41 AM.png">
+<img src ="./wireframes/Screen Shot 2020-02-28 at 9.31.10 AM.png">
+<img src ="./wireframes/Screen Shot 2020-02-07 at 10.14.52 AM.png">
+<img src ="./wireframes/Screen Shot 2020-02-28 at 9.31.25 AM.png">
