@@ -29,7 +29,7 @@ class HighlightsPage extends Component {
     console.log(this.state.highlights)
 
 
-    let reels = this.state.highlights.length !== 0 && this.state.highlights.tvhighlights.map((highlight, index) => {
+    let reels = this.state.highlights.length !== 0 && this.state.highlights.tvhighlights.map( (highlight, index) => {
       console.log(highlight.strVideo.substring(highlight.strVideo.indexOf("=")+1))
       const youtubeId = highlight.strVideo.substring(highlight.strVideo.indexOf("=")+1)
 

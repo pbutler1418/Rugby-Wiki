@@ -16,8 +16,8 @@ import {
 function App() {
   return (
     <div className="App">
-        <div className="links">
-          <nav>
+      <div className="links">
+        <nav>
           <NavLink
             exact
             to={'/'}
@@ -31,29 +31,29 @@ function App() {
             activeClassName={"active"}
           >
             Team Info
-          </NavLink>  
+          </NavLink>
           <NavLink
             exact
             to={'/leagueInfo'}
             activeClassName={"active"}
           >
             League Info
-          </NavLink> 
+          </NavLink>
           <NavLink
             exact
             to={'/playerInfo'}
             activeClassName={"active"}
           >
             Player Info
-          </NavLink> 
+          </NavLink>
           <NavLink
             exact
             to={'/highlights'}
             activeClassName={"active"}
           >
             Highlights
-          </NavLink> 
-          </nav>
+          </NavLink>
+        </nav>
       </div>
       <main>
         <Switch>
@@ -61,7 +61,7 @@ function App() {
           <Route path="/teamInfo" component={TeamInfoPage} />
           <Route path="/leagueInfo" component={LeagueInfoPage} />
           <Route path="/playerInfo" component={PlayerInfoPage} />
-          <Route path="/highlights"component={HighlightsPage} />
+          <Route path="/highlights" component={HighlightsPage} />
         </Switch>
       </main>
     </div>

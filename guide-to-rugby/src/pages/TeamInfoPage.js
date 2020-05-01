@@ -1,4 +1,4 @@
-import React, {Component} from "react"
+import React, { Component } from "react"
 import axios from "axios"
 import Search from "../components/Search"
 const API_KEY = "4013017"
@@ -7,7 +7,7 @@ const API_KEY = "4013017"
 class TeamInfoPage extends Component {
   constructor() {
     super()
-    
+
     this.state = {
       teams: [],
       input: [],
@@ -20,23 +20,23 @@ class TeamInfoPage extends Component {
       const response = await axios.get(`https://www.thesportsdb.com/api/v1/json/${API_KEY}/search_all_teams.php?s=Rugby&c=${searchQuery}`)
       console.log(response)
       this.setState({
-        teams:response.data
+        teams: response.data
       })
     }
     catch (error) {
-      alert("We don't have information for that. Refresh the page and try again!")
+      alert("We don't have information for that. Refresh the page and ry Again!")
     }
   }
 
   handleChange = event => {
-  
+
     this.setState({
       [event.target.name]: event.target.value
-      
+
     })
   }
 
-  handleSubmit = event => { 
+  handleSubmit = event => {
     event.preventDefault()
     this.fetchInfo(this.state.searchQuery)
   }
@@ -53,7 +53,7 @@ class TeamInfoPage extends Component {
           <p>{club.strDescriptionEN}</p>
         </div>
       )
-    }) 
+    })
     return (
       <>
         <h1>Team Info</h1>
@@ -67,7 +67,7 @@ class TeamInfoPage extends Component {
       </>
     )
   }
-  }
+}
 
 
 export default TeamInfoPage
