@@ -2,9 +2,8 @@
 
 ## Description
 
-Your one stop shop to stay up to date with all rugby related info in the world.
-The app will allow the user to research multiple aspects of the game from leagues 
-and teams all over the world. 
+Rugby Wiki is meant to be your one stop shop to stay up to date with all rugby related info in the world. The intention of the app is to provide a place where emerging rugby fans can dive in and learn more about this great sport. 
+The app will allow the user to research information on players, teams, leagues, and even view rugby highlights from all over the world. Rugby Wiki was created using HTML, CSS, Javascript, and the React Javascript library, and is deployed on Surge. 
 
 Link to deployed site: 
 
