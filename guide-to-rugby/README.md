@@ -1,33 +1,45 @@
-<h1> Rugby Wiki </h1>
+# Rugby Wiki
+
+## Description
+
 Your one stop shop to stay up to date with all rugby related info in the world.
 The app will allow the user to research multiple aspects of the game from leagues 
 and teams all over the world. 
 
-<h2>Components</h2>
-  <h3>Home Page</h3>
-  <h3>Team Info Page</h3>
-    Team info page will all the professional teams in a country with their team name, year formed, home stadium, team description, and, if available, team logo and jersey.
-  <h3>League Info Page</h3>
-    The league info page will display all the leagues played in various areas around the world with their year formed and desciption.
-  <h3>Player Info Page</h3>
-    The player info page will allow the user to select a club from the English Premiership Rugby competition and recieve all the biographys available for the players on that team
-  <h3>Highlights Page</h3>
-    The highlight page page will conitnuously update with highlights as they are posted.
-    <h3>Search Component</h3>
-    I made a seearch component for both the team info page to allow the user to freely search for info related to whatever country they are interested in.
+Link to deployed site: 
 
-<h2>API USED</h2>
-  The api for this project is going to be The Sports DB: Sports MetaData (https://www.thesportsdb.com/).
+* http://rugbywiki.surge.sh/
 
-<h2>MVP</h2>
-  1. MVP for this app will be to create an app that not only displays the correct information for each responsive component, but narrows down information based on the user's input, displaying information 
-for a specific league or team for example.
-  2. Good looking design.
+## MVP
+* Be a working, interactive React app, built using create react app, HTML, CSS, and JavaScript.
+* Use Axios to consume data from an external source, and render that data into the DOM.
+* Use flexbox (display: flex).
+* Implement responsive design on 3 screen sizes (including desktop) using 2 media queries (tablet and mobile).
+* Host on Surge. 
+* Utilize React Router, installed via NPM.
+* Have at least 6 separate, rendered components.
+* Implement an organized and understandable React file structure.
 
-<h2>Post MVP</h2>
-  Post MVP for the project will be to find and implement a new API that will display even more information and
-  the creation of a "Discussion/Forum" page where a user can add their own rugby opinions to the page.
+## Post-MVP
+* Create a continuously updating rugby news component. 
+* Institute a rugby blog, where users can sign up and leave their own comments and opinions.
+* Allow for the user to look up more detailed information on more players, teams, and leagues.
 
-<h2>SWOT Analysis</h2>
-  I have been having some difficulty with connecting user input to the API call. I have been remedying this by looking over passed examples. My second concern is since we haven't worked with videos yet, I am a little worried if there will be any unexpected issues in getting a video to play.
- 
+## Components Used
+* Home Page: Landing page.
+* Team Info Page: Team info page will all the professional teams in a country with their team name, year formed, home stadium, team description, and, if available, team logo and jersey.
+* League Info Page: The league info page will display all the leagues played in various areas around the world with their year formed and desciption.
+* Player Info Page: The player info page will allow the user to select a club from the English Premiership Rugby competition and recieve all the biographys available for the players on that team.
+* Highlights Page: The highlight page page will conitnuously update with highlights as they are posted.
+* Search Component: I made a seearch component for both the team info page to allow the user to freely search for info related to whatever country they are interested in.
+
+## API Information
+* The Sports DB: Sports MetaData (https://www.thesportsdb.com/)
+
+## Wireframes
+
+<img src ="guide-to-rugby/wireframes/Screen Shot 2020-02-28 at 9.29.15 AM.png">
+<img src ="guide-to-rugby/wireframes/Screen Shot 2020-02-28 at 9.30.41 AM.png">
+<img src ="guide-to-rugby/wireframes/Screen Shot 2020-02-28 at 9.31.25 AM.png">
+<img src ="guide-to-rugby/wireframes/Screen Shot 2020-02-28 at 9.29.33 AM.png">
+<img src ="guide-to-rugby/wireframes/Screen Shot 2020-02-28 at 9.31.10 AM.png">
